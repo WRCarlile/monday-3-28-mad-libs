@@ -1,3 +1,13 @@
 #story {
   display: none;
+  color: darkgray;
+  border: 2px solid black;
+}
+#story p{
+  font-family: cursive;
+}
+#response p{
+  text-transform: uppercase;
+  font-style: oblique;
+  font-weight: bold;
 }
