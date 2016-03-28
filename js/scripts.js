@@ -1,13 +1,24 @@
 $(document).ready(function() {
   $("#blanks form").submit(function(event) {
-    var blanks= ["person1", "person2", "animal", "exclamation", "verb", "noun"];
-
+    var blanks= ["item1", "item2", "item3", "item4", "item5", "item6"];
+    var array = [];
     blanks.forEach(function(blank) {
       var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput);
-    });
+      // $("#" + blank).text(userInput);
+      userInput = userInput.toUpperCase();
+      array.push(userInput);
 
-    $("#story").show();
+
+      // $(userInput).toUpperCase();
+      // userInput.sort();
+      console.log(userInput);
+      $('#list').append("<li>" + userInput + "</li>");
+
+    // });
+  });
+    array = array.sort();
+    $("#show, #list").show();
+    $('#blanks').hide();
 
     event.preventDefault();
   });

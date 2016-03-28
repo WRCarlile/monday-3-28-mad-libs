@@ -1,13 +1,11 @@
-#story {
+#show{
+  display: none;
+}
+#list {
   display: none;
   color: darkgray;
   border: 2px solid black;
 }
-#story p{
+#list p{
   font-family: cursive;
-}
-#response p{
-  text-transform: uppercase;
-  font-style: oblique;
-  font-weight: bold;
 }
